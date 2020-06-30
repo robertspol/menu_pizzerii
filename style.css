@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    background: no-repeat url("pizzabackground.jpg") 0 80%;
+  }
+
+  .logo {
+    margin-bottom: 2%;
+    text-align: center;
+    color: yellow;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 0 0 30px white, 0 0 10px yellow;
+  }
+  
+  .logo span{
+    display: inline-block;
+    color: yellow;
+    transform: rotate(15deg) translateY(6px);
+    animation: neon 2s 2s infinite;
+  }
+  
+  header {
+    margin-top: 1%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+  }
+  
+  span {
+    color: red;
+  }
+  
+  .list {
+    margin-top: 2%;
+  }
+  
+  .list h1 {
+    margin: 0 2% 1% auto;
+    color: white;
+    text-align: right;
+  }
+  
+  li {
+    display: flex;
+    background-color: white;
+    width: 28%;
+    padding: 3px 4px;
+    line-height: 24px;
+    margin: 0 2% 0 auto;
+    font-size: 17px;
+    list-style: none;
+    cursor: pointer;
+  }
+  
+  li:nth-child(even) {
+    background-color: #aaa;
+  }
+  
+  li:nth-child(9) {
+    background-color: orange;
+    color: white;
+  }
+  
+  li:nth-child(10) {
+    background-color: black;
+    color: white;
+  }
+  
+  #li {
+    display: flex;
+    width: 100%;
+  }
+  
+  #li.active {
+    color:red;
+    font-weight: bold;
+  }
+  
+  p {
+    margin: 0 10px 0 auto;
+  }
+  
+  .order {
+    margin: 0 10px 0 auto;
+    font-size: 12px;
+    color: black;
+  }
+  
+  .deleteItem {
+    margin: 0 0 0 auto;
+    font-size: 12px;
+  }
+  
+  .deleteItem:hover {
+    background-color: red;
+  }
+  
+  .inline {
+    display: inline-block;
+  }
+  
+  button {
+    display: block;
+    margin: 1.5% 7% auto auto;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    transition: .2s;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: green;
+    color: white;
+  }
+  
+  .cancellation:hover {
+    background-color: red;
+    color: white;
+  }
+  
+  @keyframes neon {
+    0% {
+      opacity: 0;
+    }
+  
+    12% {
+      opacity: 0.5
+    }
+  
+    15% {
+      opacity: 1
+    }
+  
+    30% {
+      opacity: 0
+    }
+  
+    33% {
+      opacity: 0.5
+    }
+  
+    40% {
+      opacity: 1
+    }
+  
+    50% {
+      opacity: 0
+    }
+  
+    55% {
+      opacity: 0.5
+    }
+  
+    60% {
+      opacity: 1
+    }
+  
+    65% {
+      opacity: 0.5
+    }
+    
+    70% {
+      opacity: 0
+    }
+  
+    72% {
+      opacity: 0.5
+    }
+  
+    80% {
+      opacity: 1
+    }
+  
+    90% {
+      opacity: 0.5;
+    }
+  
+    93% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @media(min-width: 1440px) {
+    .logo {
+      font-size: 80px;
+    }
+  
+    header {
+      font-size: 23px;
+    }
+  
+    li {
+      width: 33%;
+      line-height: 43px;
+      margin: 0 2% 0 auto;
+      font-size: 22px;
+    }
+  
+    .order {
+      font-size: 20px;
+    }
+    
+    .deleteItem {
+      font-size: 20px;
+    }  
+    
+  button {
+    margin: 1.5% 7% auto auto;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  }
+  
+  @media(min-width: 1920px) {
+    body {
+      background: no-repeat url('pizzabackground.jpg') 0 30%;
+    }
+  
+    .logo {
+      font-size: 100px;
+    }
+   
+    header {
+      font-size: 30px;
+    }
+  
+    li {
+      width: 40%;
+      line-height: 49px;
+      margin: 0 2% 0 auto;
+      font-size: 30px;
+    }
+  
+    .order {
+      margin: 0 10px 0 auto;
+      font-size: 28px;
+    }
+    
+    .deleteItem {
+      margin: 0 0 0 auto;
+      font-size: 28px;
+    }  
+    
+    button {
+     margin: 1.5% 7% auto auto;
+     font-size: 20px;
+     font-weight: bold;
+  }
+  }
